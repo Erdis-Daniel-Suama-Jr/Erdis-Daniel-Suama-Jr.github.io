@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -125 270 250" width="540" height="500" role="img" aria-label="Erdis — symbole animé « e. »"><title>Erdis — symbole animé « e. »</title><style>
+.band{animation:band .55s cubic-bezier(.22,1,.36,1) .25s both}
+.top{animation:top .75s cubic-bezier(.34,1.45,.64,1) .7s both}
+.bot{animation:bot .75s cubic-bezier(.34,1.45,.64,1) .7s both}
+.drop{animation:drop 1s linear 1.25s both}
+@keyframes band{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes top{0%{transform:translateY(34px);opacity:0}30%{opacity:1}100%{transform:translateY(0);opacity:1}}
+@keyframes bot{0%{transform:translateY(-34px);opacity:0}30%{opacity:1}100%{transform:translateY(0);opacity:1}}
+@keyframes drop{
+0%{transform:translateY(-170px);opacity:0;animation-timing-function:cubic-bezier(.55,0,1,.45)}
+12%{opacity:1}
+52%{transform:translateY(0);animation-timing-function:cubic-bezier(0,.55,.45,1)}
+68%{transform:translateY(-20px);animation-timing-function:cubic-bezier(.55,0,1,.45)}
+82%{transform:translateY(0);animation-timing-function:cubic-bezier(0,.55,.45,1)}
+91%{transform:translateY(-6px);animation-timing-function:cubic-bezier(.55,0,1,.45)}
+100%{transform:translateY(0);opacity:1}}
+
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out 2.6s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><g fill="#FFFFFF"><path class="top" d="M-86.46,-25 A90,90 0 0 1 86.46,-25 L54.54,-25 A60,60 0 0 0 -54.54,-25 Z"/><path class="band" d="M-89.33,-11 L89.33,-11 A90,90 0 0 1 89.33,11 L-89.33,11 A90,90 0 0 1 -89.33,-11 Z"/><path class="bot" d="M-86.46,25 A90,90 0 0 0 77.94,45 L39.69,45 A60,60 0 0 1 -54.54,25 Z"/></g><g class="drop"><circle class="pulse" cx="114" cy="77" r="13" fill="#FFD600"/></g></svg>
